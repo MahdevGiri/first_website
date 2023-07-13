@@ -1,3 +1,7 @@
 .test1 {
     background: red;
 }
+
+.test {
+    border: solid 2px green;
+}
