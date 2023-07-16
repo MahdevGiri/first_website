@@ -3,86 +3,128 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Your IT Service Company</title>
+    <title>Your IT Company</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
       <nav>
         <div class="logo">
-          <a href="#">Your IT Service Company</a>
+          <a href="#">Your IT Company</a>
         </div>
         <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
           <li><a href="#services">Services</a></li>
-          <li><a href="#about">About Us</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="burger">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
         </div>
       </nav>
     </header>
 
     <main>
-      <section id="home">
-        <div class="slider">
-          <div class="slide slide1"></div>
-          <div class="slide slide2"></div>
-          <div class="slide slide3"></div>
-        </div>
-        <div class="content">
-          <h1>Welcome to Your IT Service Company</h1>
-          <p>We provide top-notch IT solutions for businesses.</p>
-          <a href="#contact" class="cta-button">Get a Quote</a>
+      <section id="hero">
+        <div class="hero-content">
+          <h1>Your Trusted IT Solutions Provider</h1>
+          <p>
+            We offer innovative IT solutions to help your business thrive in the
+            digital world.
+          </p>
+          <a href="#contact" class="cta-button">Get Started</a>
         </div>
       </section>
 
       <section id="services">
         <h2>Our Services</h2>
-        <ul>
-          <li>
-            <h3>Network Setup and Maintenance</h3>
+        <div class="service-card">
+          <div class="service-icon">
+            <img src="service1.png" alt="Service 1 Icon" />
+          </div>
+          <h3>Network Solutions</h3>
+          <p>
+            From design to implementation, we create secure and scalable
+            networks tailored to your business needs.
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <img src="service2.png" alt="Service 2 Icon" />
+          </div>
+          <h3>Software Development</h3>
+          <p>
+            Our expert developers build custom software solutions to streamline
+            your business processes.
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <img src="service3.png" alt="Service 3 Icon" />
+          </div>
+          <h3>Data Security</h3>
+          <p>
+            We implement robust security measures to protect your sensitive data
+            from cyber threats.
+          </p>
+        </div>
+      </section>
+
+      <section id="portfolio">
+        <h2>Our Portfolio</h2>
+        <div class="portfolio-item">
+          <img src="project1.jpg" alt="Project 1" />
+          <div class="portfolio-details">
+            <h3>Project 1</h3>
             <p>
-              We offer professional network setup and maintenance services to
-              keep your business connected and secure.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+              convallis euismod enim sed tempus.
             </p>
-          </li>
-          <li>
-            <h3>Software Development</h3>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <img src="project2.jpg" alt="Project 2" />
+          <div class="portfolio-details">
+            <h3>Project 2</h3>
             <p>
-              Our experienced developers create customized software solutions
-              tailored to your specific needs.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+              convallis euismod enim sed tempus.
             </p>
-          </li>
-          <li>
-            <h3>Data Backup and Recovery</h3>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <img src="project3.jpg" alt="Project 3" />
+          <div class="portfolio-details">
+            <h3>Project 3</h3>
             <p>
-              We provide reliable data backup and recovery services to ensure
-              your critical information is protected.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+              convallis euismod enim sed tempus.
             </p>
-          </li>
-        </ul>
+          </div>
+        </div>
       </section>
 
       <section id="about">
         <h2>About Us</h2>
         <p>
-          Your IT Service Company is a leading provider of comprehensive IT
-          solutions. With a team of highly skilled professionals, we aim to
-          deliver exceptional services to our clients.
+          Your IT Company is a leading provider of cutting-edge IT solutions.
+          With a team of experienced professionals, we deliver reliable and
+          cost-effective services to businesses of all sizes.
         </p>
         <p>
-          Our mission is to help businesses harness the power of technology to
-          achieve their goals.
+          We are committed to helping our clients leverage technology to achieve
+          their goals and stay ahead in today's competitive landscape.
         </p>
       </section>
 
       <section id="contact">
         <h2>Contact Us</h2>
-        <p>Ready to get started? Contact us today to discuss your IT needs.</p>
+        <p>
+          Get in touch with our team to discuss your IT requirements and start
+          your digital transformation journey.
+        </p>
         <form id="contact-form">
           <input type="text" id="name" placeholder="Your Name" />
           <input type="email" id="email" placeholder="Your Email" />
@@ -93,7 +135,7 @@
     </main>
 
     <footer>
-      <p>&copy; 2023 Your IT Service Company. All rights reserved.</p>
+      <p>&copy; 2023 Your IT Company. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
