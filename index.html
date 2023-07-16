@@ -3,15 +3,82 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Just Testing</title>
+    <title>Your IT Service Company</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <script src="index.js"></script>
-    <div class="test">
-      <p>Inside the container</p>
-    </div>
-    <p class="test1">this is initail set up</p>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home">
+        <h1>Welcome to Your IT Service Company</h1>
+        <p>We provide top-notch IT solutions for businesses.</p>
+        <a href="#contact" class="cta-button">Get a Quote</a>
+      </section>
+
+      <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+          <li>
+            <h3>Network Setup and Maintenance</h3>
+            <p>
+              We offer professional network setup and maintenance services to
+              keep your business connected and secure.
+            </p>
+          </li>
+          <li>
+            <h3>Software Development</h3>
+            <p>
+              Our experienced developers create customized software solutions
+              tailored to your specific needs.
+            </p>
+          </li>
+          <li>
+            <h3>Data Backup and Recovery</h3>
+            <p>
+              We provide reliable data backup and recovery services to ensure
+              your critical information is protected.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="about">
+        <h2>About Us</h2>
+        <p>
+          Your IT Service Company is a leading provider of comprehensive IT
+          solutions. With a team of highly skilled professionals, we aim to
+          deliver exceptional services to our clients.
+        </p>
+        <p>
+          Our mission is to help businesses harness the power of technology to
+          achieve their goals.
+        </p>
+      </section>
+
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Ready to get started? Contact us today to discuss your IT needs.</p>
+        <form>
+          <input type="text" placeholder="Your Name" />
+          <input type="email" placeholder="Your Email" />
+          <textarea placeholder="Your Message"></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Your IT Service Company. All rights reserved.</p>
+    </footer>
   </body>
 </html>
