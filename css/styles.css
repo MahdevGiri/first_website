@@ -164,8 +164,17 @@ a {
   height: 40px;
 }
 
+.icon--small {
+  width: 30px;
+  height: 30px;
+}
+
 .icon--primary {
   fill: var(--color-primary);
+}
+
+.icon--white {
+  fill: #fff;
 }
 
 .icon-container {
@@ -177,6 +186,10 @@ a {
   display: inline-flex;
   justify-content: center;  /*for aligning along horizontal axis by default*/
   align-items: center;      /*for aligning along vertical axis by default*/
+}
+
+.icon-container--accent {
+  background: var(--color-accent);
 }
 
 
@@ -448,5 +461,37 @@ a {
 @media screen and (min-width: 768px) {
   .grid--1x2 {
     grid-template-columns: 1fr 1fr;  /* we can also use grid-template-columns: repeat(2, 1fr);  */
+  }
+}
+
+
+/* Testimonial */
+.testimonial {
+  padding: 3rem;
+}
+
+.testimonial__image > img {  /*here we are using direct child selector to target the specific class. Another approach is to create new class for img*/
+  width: 100%;  /* here 100% means 100% of its given allocation (in this case 50% of total size of grid). this is the way of making image responsive. */ 
+}
+
+.testimonial__image {
+  position: relative;
+}
+
+.testimonial__image > .icon-container {
+  position: absolute;
+  top:3rem;
+  right : -32px;
+}
+
+
+@media screen and (min-width: 768px) {
+  .testimonial .quote, 
+  .testimonial .quote__author {
+    font-size: 2.4rem;
+  }
+
+  .testimonial .quote {
+    margin-left: 6rem;
   }
 }
