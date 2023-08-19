@@ -206,6 +206,14 @@ a {
   white-space: nowrap;
   text-align: center;
   margin: 1rem 0;
+  outline: 0;
+}
+
+.btn .icon {  /*in the button if we have an icon then apply these rule */
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+  vertical-align: middle;
 }
 
 .btn--primary {
@@ -285,7 +293,7 @@ a {
 .input-group .input {
   border: 0;
   flex-grow: 1;  /*it will take all the avialabe space*/
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 2rem;
 }
 
 .input-group .btn {
@@ -590,6 +598,7 @@ a {
 
 .block__header {
   text-align: center;
+  color: var(--color-headings);
 }
 
 .block__heading {
@@ -712,5 +721,33 @@ a {
   .hero__content {
     text-align: left;
     align-self: center;
+  }
+}
+
+
+/* Domain Block */
+.block-domain .input-group {  /*inside block domain if there is input group then apply these */
+  box-shadow: 0 0 30px 20px #e6ebee;
+  border: 0;
+  margin: 4rem auto;
+  max-width: 670px;
+}
+
+.block-domain__prices {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /*divide in 3 cols and give same size to each*/ 
+  grid-template-rows: repeat(2, 6rem); /* to set the height of each row */
+  font-size: 2rem;
+  font-weight: 600;
+  justify-items: center;  /*for horizontal alignment */
+  max-width: 700px;
+  margin: 0 auto; /*0 for vertical and auto for horizontal. auto will equally distribute the avialable space to left and right */
+
+}
+
+@media screen and (min-width: 768px) {
+  .block-domain__prices {
+    /*grid-template-columns: repeat(6, 1fr); /*divide in 3 cols and give same size to each*/ 
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr)); /*better way to do it */
   }
 }
