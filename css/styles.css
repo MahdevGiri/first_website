@@ -632,6 +632,7 @@ a {
 .block__header {
   text-align: center;
   color: var(--color-headings);
+  margin-top: 4rem;
 }
 
 .block__heading {
