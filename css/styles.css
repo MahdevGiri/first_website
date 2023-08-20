@@ -206,7 +206,7 @@ a {
   font-size: 1.8rem;
   font-weight: 600;
   text-transform: uppercase;
-  padding: 2rem 3rem;
+  padding: 2rem 4vw;
   border:0;
   border-radius: 40px;
   cursor: pointer;
@@ -301,6 +301,7 @@ a {
   border: 0;
   flex-grow: 1;  /*it will take all the avialabe space*/
   padding: 1.5rem 2rem;
+  width: 0;  /*for fixing layout for screen less than 400px */
 }
 
 .input-group .btn {
@@ -773,8 +774,9 @@ a {
 
 .block-domain__prices {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /*divide in 3 cols and give same size to each*/ 
+  grid-template-columns: repeat(2, 1fr); /*divide in 3 cols and give same size to each*/ 
   grid-template-rows: repeat(2, 6rem); /* to set the height of each row */
+  color: var(--color-headings);
   font-size: 2rem;
   font-weight: 600;
   justify-items: center;  /*for horizontal alignment */
